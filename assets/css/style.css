@@ -606,7 +606,7 @@ body {
 .logos-slide {
   display: inline-block;
   white-space: nowrap;
-  animation: 15s slide infinite linear;
+  animation: 23s slide infinite linear;
 }
 
 .logos-slide img{
@@ -788,7 +788,67 @@ body {
 .faq-card .card-action.active + .card-content { max-height: 500px; }
 
 
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
 
+.cta .container {
+  background-color: var(--rich-black-fogra-29-2);
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: block;
+  padding-left: 50px;
+}
+
+.cta .h2 {
+  color: white;
+  padding: 20px 0;
+}
+
+.cta-text .w-50{
+  max-width: 100%;
+}
+.cta-text {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  flex-direction: column;
+  display: flex;
+
+}
+
+.cta-p {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cta-logo {
+  width: 80%;
+  min-height: 224px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px 0;
+}
+
+.cta .btn-group { justify-content: flex-start; padding-top: 10px; justify-content: center; align-items: center;}
+
+.cta .btn-group .flex-btn { gap: 10px; }
+
+.cta .btn-icon ion-icon {
+  color: var(--go-green);
+  font-size: 40px;
+}
+
+.cta .btn-group .span {
+  color: var(--go-green);
+  font-family: var(--ff-cuprum);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+}
 
 
 /*-----------------------------------*\
@@ -1046,7 +1106,15 @@ body {
 
   .features .grid-list { grid-template-columns: 1fr 1fr; }
 
+  .cta .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .cta-logo {
+    width: 70%;
+  }
 
   /**
    * FOOTER
@@ -1061,7 +1129,7 @@ body {
 
 
 /**
- * responsive for large than 992px screen
+ * responsive for larger than 992px screen
  */
 
 @media (min-width: 992px) {
@@ -1172,6 +1240,10 @@ body {
     grid-template-columns: 0.48fr 1fr;
     align-items: flex-start;
   }
+
+  /*
+   * CTA
+   */
 
 
 
