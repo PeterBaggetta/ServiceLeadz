@@ -798,7 +798,7 @@ body {
   justify-content: space-between;
   align-items: center;
   display: block;
-  padding-left: 50px;
+  /* padding-left: 50px; */
 }
 
 .cta .h2 {
@@ -814,7 +814,6 @@ body {
   grid-row-gap: 30px;
   flex-direction: column;
   display: flex;
-
 }
 
 .cta-p {
@@ -826,12 +825,14 @@ body {
 }
 
 .cta-logo {
-  width: 80%;
-  min-height: 224px;
+  padding: 20px 0;
+}
+
+.cta-logo img {
+  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 20px 0;
 }
 
 .cta .btn-group { justify-content: flex-start; padding-top: 10px; justify-content: center; align-items: center;}
@@ -1106,6 +1107,9 @@ body {
 
   .features .grid-list { grid-template-columns: 1fr 1fr; }
 
+  /* 
+   * CTA
+   */
   .cta .container {
     display: flex;
     justify-content: center;
