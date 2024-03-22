@@ -445,7 +445,7 @@ body {
 .about .container {
   display: grid;
   gap: 30px;
-  background-image: url(/assets/images/cntower-bg.png);
+  background-image: url(/assets/images/cn_tower.png);
   background-repeat: no-repeat;
 }
 
@@ -1116,9 +1116,8 @@ body {
     align-items: center;
   }
 
-  .cta-logo {
-    width: 70%;
-  }
+
+
 
   /**
    * FOOTER
