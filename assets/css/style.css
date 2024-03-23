@@ -423,7 +423,7 @@ body {
 
 .hero-title { margin-block: 10px 15px; }
 
-.hero-text { color: var(--rich-black-fogra-29-1); max-width: 787px; font-size: var(--fs-8);}
+.hero-text { color: var(--rich-black-fogra-29-1); max-width: 787px;}
 
 /* .hero .btn-group { margin-block-start: 40px; justify-content: center; align-items: flex-start;} */
 
