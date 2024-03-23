@@ -6,15 +6,15 @@
  * add event on element
  */
 
-const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener(type, callback);
-    }
-  } else {
-    elem.addEventListener(type, callback);
-  }
-}
+// const addEventOnElem = function (elem, type, callback) {
+//   if (elem.length > 1) {
+//     for (let i = 0; i < elem.length; i++) {
+//       elem[i].addEventListener(type, callback);
+//     }
+//   } else {
+//     elem.addEventListener(type, callback);
+//   }
+// }
 
 
 
@@ -54,14 +54,14 @@ const addEventOnElem = function (elem, type, callback) {
  * header active when scroll down
  */
 
-const header = document.querySelector("[data-header]");
+// const header = document.querySelector("[data-header]");
 
-const headerActive = function () {
-  window.scrollY > 100 ? header.classList.add("active")
-    : header.classList.remove("active");
-}
+// const headerActive = function () {
+//   window.scrollY > 100 ? header.classList.add("active")
+//     : header.classList.remove("active");
+// }
 
-addEventOnElem(window, "scroll", headerActive);
+// addEventOnElem(window, "scroll", headerActive);
 
 
 
@@ -73,4 +73,4 @@ const accordionAction = document.querySelectorAll("[data-accordion-action]");
 
 const toggleAccordion = function () { this.classList.toggle("active"); }
 
-addEventOnElem(accordionAction, "click", toggleAccordion);
+// addEventOnElem(accordionAction, "click", toggleAccordion);

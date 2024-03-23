@@ -25,7 +25,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
@@ -38,12 +43,9 @@
     <div class="container">
 
       <a href="#" class="logo"><img src="/assets/images/logo_words.png"></a>
-  
+
     </div>
   </header>
-
-
-
 
 
   <main>
@@ -54,28 +56,35 @@
       -->
 
       <section class="section hero" id="home" aria-label="hero">
-        
+
         <div class="container">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle has-before">THE #1 PLATFORM FOR SEMICONDUCTOR CONNECTIONS</p>
+            <div class="hero-heading-type">
+              <h1 class="h1 hero-title">Capitalize On</h1>
+              <div class="typed-words"></div>
+            </div>
 
-            <h1 class="h1 hero-title">Capitalize on Your Ventures</h1>
+            <div>
+              <p class="hero-text">
+                Tap into a world of opportunity with direct contacts and sourcing <br/>for OEMs with
+                the #1 platform for semiconductors.
+              </p>
+            </div>
 
-            <p class="hero-text">
-              Tap into a world of opportunity with direct contacts and sourcing for OEMs
-            </p>
+            <div class="hero-btn p25">
+              <a href="#" id="popup-link1" class="btn btn-primary">Book Your Call</a>
+            </div>
 
-            <div class="btn-group">
-              <a href="#" onClick="MyWindow=window.open('https://calendly.com/robert-sl/30min', 'MyWindow', 'width=900, height=800'); return false" class="btn btn-primary">Book Your Call</a>
+
+            <div class="hero-banner">
+              <img src="./assets/images/logo_moving.gif" class="hero-logo">
             </div>
 
           </div>
 
-          <figure class="hero-banner has-before img-holder" style="--width: 650; --height: 650;">
-            <img src="./assets/images/logo_moving.gif" width="650" height="650" alt="hero banner" class="img-cover">
-          </figure>
+
 
         </div>
       </section>
@@ -93,12 +102,12 @@
         <div class="container">
 
           <figure class="about-banner">
-            In 2023 ServiceLeadz helped contruction companies, real estate companies, and the consumer service market 
-                facilitate partnerships and contracts with our highest facilitation value being $14M. <br/><br/>
-                
-              Now in 2024 we are expanding our footprint into private and public markets, facilitating meetings between 
-                businesses and investors internationally. This shift enabled us to harness a system that channeled $100M+ 
-                globally, showcasing our growing market influence.
+            In 2023 ServiceLeadz helped contruction companies, real estate companies, and the consumer service market
+            facilitate partnerships and contracts with our highest facilitation value being $14M. <br /><br />
+
+            Now in 2024 we are expanding our footprint into private and public markets, facilitating meetings between
+            businesses and investors internationally. This shift enabled us to harness a system that channeled $100M+
+            globally, showcasing our growing market influence.
           </figure>
 
           <div class="about-content">
@@ -107,7 +116,7 @@
 
               <div class="number">
                 <div class="number-wrap">
-                  <div class="number-head investors">10,000,000</div>
+                  <div class="counter number-head" data-target="10000000"></div>
                   <div class="number-head">+</div>
                 </div>
                 <div class="number-paragraph">Investors</div>
@@ -115,16 +124,16 @@
 
               <div class="number">
                 <div class="number-wrap">
-                  <div class="number-head investors">1,600,000</div>
+                  <div class="counter number-head" data-target="1600000"></div>
                   <div class="number-head">+</div>
                 </div>
                 <div class="number-paragraph">Institutional Investors</div>
               </div>
-              
+
               <div id="w-node-1" class="number">
                 <div class="number-wrap">
                   <div class="number-head">$</div>
-                  <div class="number-head deals">145,000,000</div>
+                  <div class="counter number-head" data-target="145000000"></div>
                   <div class="number-head">+</div>
                 </div>
                 <div class="number-paragraph">In Deals</div>
@@ -133,7 +142,7 @@
               <div id="w-node-2" class="number">
                 <div class="number-wrap">
                   <div class="number-head">$</div>
-                  <div class="number-head deals">45,000,000</div>
+                  <div class="counter number-head" data-target="45000000"></div>
                   <div class="number-head">+</div>
                 </div>
                 <div class="number-paragraph">In Investment/Dealflow Introductions</div>
@@ -141,7 +150,7 @@
 
               <div id="w-node-3" class="number">
                 <div class="number-wrap">
-                  <div class="number-head investors">150</div>
+                  <div class="counter number-head" data-target="150"></div>
                   <div class="number-head">+</div>
                 </div>
                 <div class="number-paragraph">Introductions Made</div>
@@ -149,22 +158,21 @@
 
               <div class="number">
                 <div class="number-wrap">
-                  <div class="number-head investors">7</div>
+                  <div class="counter number-head" data-target="7"></div>
                   <div class="number-head">+</div>
                 </div>
                 <div class="number-paragraph">Employees</div>
               </div>
-      
-            </div>
 
-            
+            </div>
 
           </div>
 
+          <div class="hero-btn p25">
+            <a href="#" id="popup-link2" class="btn btn-primary">Book Your Call</a>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="#" onClick="MyWindow=window.open('https://calendly.com/robert-sl/30min', 'MyWindow', 'width=900, height=800'); return false" class="btn btn-primary">Book Your Call</a>
-        </div>
+
       </section>
 
 
@@ -172,27 +180,27 @@
         - PARTNER COMPANY CAROUSEL
        -->
 
-       <section class="section partners" id="partners" aria-label="partners">
+      <section class="section partners" id="partners" aria-label="partners">
         <h2 class="h2 section-title text-center">We've Booked Meetings With ...</h2>
 
-          <div class="logos">
-            <div class="logos-slide">
-              <img src="assets/images/Morgan-Stanley-Logo.png"/>
-              <img src="assets/images/Synergenmet-logo.png"/>
-              <img src="assets/images/Libra-Lithium-logo.png"/>
-              <img src="assets/images/american-lithium-energy-logo.png"/>
-              <img src="assets/images/Gratomic_logo.png"/>
-              <img src="assets/images/Solid-State-AI.png"/>
-              <img src="assets/images/Tarku_resources-logo.png"/>
-            </div>
-
-            <script>
-              var copy = document.querySelector(".logos-slide").cloneNode(true);
-              document.querySelector('.logos').appendChild(copy);
-            </script>
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="assets/images/Morgan-Stanley-Logo.png" />
+            <img src="assets/images/Synergenmet-logo.png" />
+            <img src="assets/images/Libra-Lithium-logo.png" />
+            <img src="assets/images/american-lithium-energy-logo.png" />
+            <img src="assets/images/Gratomic_logo.png" />
+            <img src="assets/images/Solid-State-AI.png" />
+            <img src="assets/images/Tarku_resources-logo.png" />
           </div>
 
-       </section>
+          <script>
+            var copy = document.querySelector(".logos-slide").cloneNode(true);
+            document.querySelector('.logos').appendChild(copy);
+          </script>
+        </div>
+
+      </section>
 
 
 
@@ -207,11 +215,6 @@
           <p class="section-subtitle text-center">-- Who we connect <b>YOU</b> with --</p>
 
           <h2 class="h2 section-title text-center">The Client System that Works</h2>
-
-          <p class="section-text text-center">
-            <!-- Get the most of reduction in your team’s operating costs for the whole product which creates amazing UI/UX
-            experiences. -->
-          </p>
 
           <ul class="grid-list">
 
@@ -228,14 +231,9 @@
                   <h3 class="h3 card-title">Direct OEM Partnerships</h3>
 
                   <p class="card-text">
-                    Foster direct OEM relationships to guarantee reliable supply chain access to advanced and proprietary technologies, ensuring seamless production and competitive advantage.
+                    Foster direct OEM relationships to guarantee reliable supply chain access to advanced and
+                    proprietary technologies, ensuring seamless production and competitive advantage.
                   </p>
-
-                  <!-- <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a> -->
 
                 </div>
 
@@ -255,14 +253,9 @@
                   <h3 class="h3 card-title">Specialized Distributors</h3>
 
                   <p class="card-text">
-                    Connect with niche market experts for tailored inventory and logistic solutions, minimizing lead times and managing demand fluctuations efficiently.
+                    Connect with niche market experts for tailored inventory and logistic solutions, minimizing lead
+                    times and managing demand fluctuations efficiently.
                   </p>
-
-                  <!-- <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a> -->
 
                 </div>
 
@@ -282,14 +275,9 @@
                   <h3 class="h3 card-title">Strategic Sourcing Alliances</h3>
 
                   <p class="card-text">
-                    Utilize volume negotiation for competitive pricing and secure priority access to new and in-demand chips, enhancing sourcing flexibility to support growth and innovation through strategic alliances.
+                    Utilize volume negotiation for competitive pricing and secure priority access to new and in-demand
+                    chips, enhancing sourcing flexibility to support growth and innovation through strategic alliances.
                   </p>
-
-                  <!-- <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a> -->
 
                 </div>
 
@@ -309,7 +297,8 @@
                   <h3 class="h3 card-title">Advanced Client Acquisition Assurance</h3>
 
                   <p class="card-text">
-                    Optimize client acquisition processes with our proven system, mirroring Lua Garoz's global network, to ensure continuous access to critical components and stay ahead in technological advancements.
+                    Optimize client acquisition processes with our proven system, mirroring Lua Garoz's global network,
+                    to ensure continuous access to critical components and stay ahead in technological advancements.
                   </p>
 
                 </div>
@@ -319,7 +308,9 @@
 
           </ul>
 
-          <a href="#" onClick="MyWindow=window.open('https://calendly.com/robert-sl/30min', 'MyWindow', 'width=900, height=800'); return false" class="btn btn-primary">Book a Call</a>
+          <div class="hero-btn p25">
+            <a href="#" id="popup-link3" class="btn btn-primary">Book Your Call</a>
+          </div>
 
         </div>
       </section>
@@ -353,8 +344,9 @@
                 <h3 class="h3 card-title">Revolutionary Component Sourcing</h3>
 
                 <p class="card-text">
-                  "Working with ServiceLeadz revolutionized our component sourcing strategy. Their direct OEM connections ensured we received high-quality chips, on time, every time."
-                  <br/><br/>- John H
+                  "Working with ServiceLeadz revolutionized our component sourcing strategy. Their direct OEM
+                  connections ensured we received high-quality chips, on time, every time."
+                  <br /><br />- John H
                 </p>
 
               </div>
@@ -368,8 +360,9 @@
                 <h3 class="h3 card-title">Invaluable Market Expertise</h3>
 
                 <p class="card-text">
-                  "ServiceLeadz's in-depth knowledge of the semiconductor market made them invaluable partners. They navigated us through market shortages with ease."
-                  <br/><br/>- Emily R.
+                  "ServiceLeadz's in-depth knowledge of the semiconductor market made them invaluable partners. They
+                  navigated us through market shortages with ease."
+                  <br /><br />- Emily R.
                 </p>
 
               </div>
@@ -383,54 +376,13 @@
                 <h3 class="h3 card-title">Strategic OEM Solutions</h3>
 
                 <p class="card-text">
-                  "Their strategic sourcing solutions matched our OEM needs perfectly, contributing significantly to our production continuity and success."
-                  <br/><br/>- Marcus T.
+                  "Their strategic sourcing solutions matched our OEM needs perfectly, contributing significantly to our
+                  production continuity and success."
+                  <br /><br />- Marcus T.
                 </p>
 
               </div>
             </li>
-
-            <!-- <li>
-              <div class="features-card">
-
-                <data class="card-number" value="04">04</data>
-
-                <h3 class="h3 card-title">Best Premimum Image</h3>
-
-                <p class="card-text">
-                  Nullam ullamcorper condimentum urna eu accumsan.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="features-card">
-
-                <data class="card-number" value="05">05</data>
-
-                <h3 class="h3 card-title">Most Advanced Features</h3>
-
-                <p class="card-text">
-                  Nullam ullamcorper condimentum urna eu accumsan.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="features-card">
-
-                <data class="card-number" value="06">06</data>
-
-                <h3 class="h3 card-title">Very Reasonable Price</h3>
-
-                <p class="card-text">
-                  Nullam ullamcorper condimentum urna eu accumsan.
-                </p>
-
-              </div>
-            </li> -->
 
           </ul>
 
@@ -470,7 +422,11 @@
 
                 <div class="card-content">
                   <p>
-                    Deal flow refers to the rate at which investment offers or business proposals are received. Fundraising is the process of gathering voluntary contributions of money or other resources. Our firm specializes in identifying, evaluating, and securing investment opportunities and capital for businesses across various sectors. We leverage our network of investors and strategic partners to facilitate the growth of your business by securing necessary funding.
+                    Deal flow refers to the rate at which investment offers or business proposals are received.
+                    Fundraising is the process of gathering voluntary contributions of money or other resources. Our
+                    firm specializes in identifying, evaluating, and securing investment opportunities and capital for
+                    businesses across various sectors. We leverage our network of investors and strategic partners to
+                    facilitate the growth of your business by securing necessary funding.
                   </p>
                 </div>
 
@@ -493,7 +449,10 @@
 
                 <div class="card-content">
                   <p>
-                    We partner with companies across multiple sectors, including technology, healthcare, real estate, and consumer products, among others. Our ideal partners are businesses looking for growth capital, seed funding, or series funding rounds. We are sector-agnostic and focus on the potential for growth and the quality of the management team.
+                    We partner with companies across multiple sectors, including technology, healthcare, real estate,
+                    and consumer products, among others. Our ideal partners are businesses looking for growth capital,
+                    seed funding, or series funding rounds. We are sector-agnostic and focus on the potential for growth
+                    and the quality of the management team.
                   </p>
                 </div>
 
@@ -516,7 +475,10 @@
 
                 <div class="card-content">
                   <p>
-                    Our firm stands out due to our personalized approach, extensive network of investors, and a proven track record of successful deals. We offer tailored strategies that align with your company's growth objectives and work closely with you throughout the entire process. Our team's expertise across various industries enables us to provide valuable insights and guidance.
+                    Our firm stands out due to our personalized approach, extensive network of investors, and a proven
+                    track record of successful deals. We offer tailored strategies that align with your company's growth
+                    objectives and work closely with you throughout the entire process. Our team's expertise across
+                    various industries enables us to provide valuable insights and guidance.
                   </p>
                 </div>
 
@@ -539,7 +501,10 @@
 
                 <div class="card-content">
                   <p>
-                    The process begins with an initial consultation to understand your business, funding needs, and objectives. We then perform a detailed analysis to determine the best fundraising strategy and prepare necessary advancements. Following this, we leverage our network to match you with suitable investors and manage the negotiation process, aiming to secure the best terms for your company.
+                    The process begins with an initial consultation to understand your business, funding needs, and
+                    objectives. We then perform a detailed analysis to determine the best fundraising strategy and
+                    prepare necessary advancements. Following this, we leverage our network to match you with suitable
+                    investors and manage the negotiation process, aiming to secure the best terms for your company.
                   </p>
                 </div>
 
@@ -562,7 +527,10 @@
 
                 <div class="card-content">
                   <p>
-                    Our fee structure is primarily success-based, meaning we earn a commission based on the funds raised or deals closed. This aligns our interests with yours, ensuring we are motivated to secure the best possible outcome for your company. An upfront fee is taken at the start to build out the system, and pay for the analysts' time.
+                    Our fee structure is primarily success-based, meaning we earn a commission based on the funds raised
+                    or deals closed. This aligns our interests with yours, ensuring we are motivated to secure the best
+                    possible outcome for your company. An upfront fee is taken at the start to build out the system, and
+                    pay for the analysts' time.
                   </p>
                 </div>
 
@@ -585,7 +553,10 @@
 
                 <div class="card-content">
                   <p>
-                    To begin the process, please fill out the contact form on our website with some basic information about your company and funding needs or email robert@serviceleadz.com. One of our team members will reach out to you within 48 hours to schedule an initial consultation. During this meeting, we'll discuss your business in more depth and how we can assist in achieving your fundraising goals.
+                    To begin the process, please fill out the contact form on our website with some basic information
+                    about your company and funding needs or email robert@serviceleadz.com. One of our team members will
+                    reach out to you within 48 hours to schedule an initial consultation. During this meeting, we'll
+                    discuss your business in more depth and how we can assist in achieving your fundraising goals.
                   </p>
                 </div>
 
@@ -608,7 +579,13 @@
 
                 <div class="card-content">
                   <p>
-                    The name 'ServiceLeadz' reflects our core mission and the unique value proposition we bring to the table, initially starting in the construction and consumer service sectors. Our journey began with the ambition to bridge the gap between high-quality service providers in these industries and the businesses or consumers seeking top-notch services. We recognized early on that while there's a plethora of opportunities in the construction and consumer service industries, finding the right deals and partnerships can be challenging due to the sheer volume of options and varying quality standards.
+                    The name 'ServiceLeadz' reflects our core mission and the unique value proposition we bring to the
+                    table, initially starting in the construction and consumer service sectors. Our journey began with
+                    the ambition to bridge the gap between high-quality service providers in these industries and the
+                    businesses or consumers seeking top-notch services. We recognized early on that while there's a
+                    plethora of opportunities in the construction and consumer service industries, finding the right
+                    deals and partnerships can be challenging due to the sheer volume of options and varying quality
+                    standards.
                   </p>
                 </div>
 
@@ -624,30 +601,31 @@
          - CTA
        -->
 
-       <section class="section cta" id="cta" aria-label="cta">
+      <section class="section cta" id="cta" aria-label="cta">
 
-          <div class="cta">
-            <div class="container">
-              <div class="cta-text w-50">
-                <h2 class="h2 text-center">Book Your Call Today</h2>
-  
-                <p class="cta-p text-center">
-                  Unlock Innovative Access to Global Capital with Direct Channels to Over 10 Million Institutional, 
-                  Accredited Retail, and Angel Investors
-                </p>
-  
-                <div class="btn-group">
-                  <a href="#" onClick="MyWindow=window.open('https://calendly.com/robert-sl/30min', 'MyWindow', 'width=900, height=800'); return false" class="btn btn-primary" >Book Your Call</a>
-                </div>
+        <div class="cta">
+          <div class="container">
+            <div class="cta-text w-50">
+              <h2 class="h2 text-center">Book Your Call Today</h2>
+
+              <p class="cta-p text-center">
+                Unlock Innovative Access to Global Capital with Direct Channels to Over 10 Million Institutional,
+                Accredited Retail, and Angel Investors
+              </p>
+
+              <div class="hero-btn p25">
+                <a href="#" id="popup-link4" class="btn btn-primary">Book Your Call</a>
               </div>
-   
-              <div class="cta-logo">
-                <img src="/assets/images/logo.png" width="650" height="650" class="img-cover"/>
-              </div>
+
             </div>
-            
-          </div>          
-        
+
+            <div class="cta-logo">
+              <img src="/assets/images/logo.png" width="650" height="650" class="img-cover" />
+            </div>
+          </div>
+
+        </div>
+
       </section>
 
     </article>
@@ -663,152 +641,6 @@
 
   <footer class="footer">
 
-    <!-- <div class="footer-top section">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">Service Leadz</a>
-
-          <p class="footer-text">
-            Secure Essential Components for Your Production and Direct Sourcing Channels for High-Quality Semiconductor Chips
-          </p>
-
-          <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
-
-            <button type="submit" class="form-btn">
-              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
-            </button>
-          </form>
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Our Services</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Strategy & Research</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Web Development</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Web Solution</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Digital Merketing</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">App Design</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">App Development</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Company</p>
-          </li>
-
-          <li>
-            <a href="#about" class="footer-link">About Company</a>
-          </li>
-
-          <li>
-            <a href="#client_system" class="footer-link">Client System</a>
-          </li>
-
-          <li>
-            <a href="#testimonials" class="footer-link">Testimonials</a>
-          </li>
-
-          <li>
-            <a href="#frequently_asked_questions" class="footer-link">Frequently Asked</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Contact Us</p>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="location" aria-hidden="true"></ion-icon>
-
-            <address class="contact-link address">
-              4517 Washington Ave. Manchester, Kentucky 39495
-            </address>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="call" aria-hidden="true"></ion-icon>
-
-            <a href="tel:+7894631546876" class="contact-link">+1 (416) 576-6866</a>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="mail" aria-hidden="true"></ion-icon>
-
-            <a href="mailto:info@hoolix.com" class="contact-link">robert@serviceleadz.com</a>
-          </li>
-
-          <li class="footer-item">
-            <ul class="social-list">
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-pinterest"></ion-icon>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-
-        </ul>
-
-      </div>
-    </div> -->
-
     <div class="footer-bottom">
       <div class="container">
 
@@ -816,37 +648,100 @@
           Copyright &copy; 2024 ServiceLeadz | All Rights Reserved.</a>
         </p>
 
-        <!-- <ul class="footer-bottom-list">
-
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">Terms of Use</a>
-          </li>
-
-        </ul> -->
-
       </div>
     </div>
 
   </footer>
 
 
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
   <!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <!-- TYPED WORDS -->
+  <script>
+    var typed = new Typed(".typed-words", {
+      strings: ["Effective Strategies", "Advanced Manufacturing", "Mining Sectors", "Meeting OEM Demands", "Cutting-Edge Serice", "Outreach", "Robust Systems"],
+      typeSpeed: 90,
+      backSpeed: 75,
+      backDelay: 600,
+      startDelay: 400,
+      loop: true,
+      showCursor: false,
+      cursorChar: "|",
+      attr: null,
+    });
+  </script>
+
+  <!-- Button to Popup Window -->
+  <script>
+    // Get the elements by their ID
+    var popupLink1 = document.getElementById("popup-link1");
+    var popupLink2 = document.getElementById("popup-link2");
+    var popupLink3 = document.getElementById("popup-link3");
+    var popupLink4 = document.getElementById("popup-link4");
+    // Show the pop-up window when the link is clicked
+    popupLink1.addEventListener("click", function (event) {
+      event.stopPropagation();
+      Calendly.initPopupWidget({ url: 'https://calendly.com/robert-sl/30min' });
+    });
+    popupLink2.addEventListener("click", function (event) {
+      event.stopPropagation();
+      Calendly.initPopupWidget({ url: 'https://calendly.com/robert-sl/30min' });
+    });
+    popupLink3.addEventListener("click", function (event) {
+      event.stopPropagation();
+      Calendly.initPopupWidget({ url: 'https://calendly.com/robert-sl/30min' });
+    });
+    popupLink4.addEventListener("click", function (event) {
+      event.stopPropagation();
+      Calendly.initPopupWidget({ url: 'https://calendly.com/robert-sl/30min' });
+    });
+
+  </script>
+
+  <!-- Numbers Counter -->
+  <script>
+    // let scrollLen = 300;
+    let run = 0;
+    window.addEventListener('scroll', function (e) {
+
+      if (document.getElementById("about") && run != 1) {
+        const counters = document.querySelectorAll('.counter');
+
+        counters.forEach((counter) => {
+          counter.innerText = '0';
+
+          const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            // console.log(typeof target, target);
+            const c = +counter.innerText;
+
+            const increment = target / 500;
+            // console.log(increment);
+
+            if (c < target) {
+              counter.innerText = `${Math.ceil(c + increment)}`;
+
+              setTimeout(updateCounter, 1);
+            } else {
+              counter.innerText = new Intl.NumberFormat('en-us').format(target);
+            }
+          };
+
+          updateCounter();
+        });
+        run = 1;
+      }
+
+    });
+
+  </script>
+
 
 </body>
 
