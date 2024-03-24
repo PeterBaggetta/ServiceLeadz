@@ -8,25 +8,24 @@
    * colors
    */
 
-  --rich-black-fogra-29-1: rgb(25, 34, 47);
-  --rich-black-fogra-29-2: rgb(18, 18, 23);
-  --rich-black-fogra-39: rgb(9, 16, 14);
-  --granite-gray: rgb(102, 102, 102);
-  --go-green_8: rgb(41, 41, 41);
-  --go-green_5: rgba(186, 159, 79, 0.219);
+  --rich-black-fogra-29-1: rgb(25, 34, 47); /* text */
+  --rich-black-fogra-29-2: rgb(18, 18, 23); /* text */
+  --rich-black-fogra-39: rgb(9, 16, 14);    /* text */
+  --granite-gray: rgb(102, 102, 102);       /* body color */
+  --go-green_8: rgb(41, 41, 41);            /* faq num bg */
+  --go-green_5: rgba(186, 159, 79, 0.219);  /* faq bg hover */
   --light-gray: rgb(204, 204, 204);
-  --mint-cream: rgb(209, 209, 201);
-  --cultured: rgb(237, 237, 237);
-  --go-green: rgb(207, 167, 45);
+  --cultured: rgb(237, 237, 237);           /* features bg */
+  --go-green: rgb(255, 255, 255);            /* main text */
   --white: rgb(255, 255, 255);
-  --jet: rgb(46, 46, 46);
+  --jet: rgb(46, 46, 46);                   /* footer bg */
 
   /**
    * typography
    */
 
-  --ff-poppins: 'Cormorant', sans-serif;
-  --ff-cuprum: 'Cormorant', sans-serif;
+  --ff-poppins: 'Playfair Display', serif;
+  --ff-cuprum: 'Playfair Display', serif;
 
   --fs-1: 4.5rem;
   --fs-2: 3.6rem;
@@ -208,11 +207,11 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--go-green);
+  background-color: rgb(41, 41, 41);
   color: var(--white);
 }
 
-.btn-primary:is(:hover, :focus) { background-color: var(--rich-black-fogra-29-1); }
+.btn-primary:is(:hover, :focus) { background-color: white; color: var(--rich-black-fogra-29-1); }
 
 .flex-btn {
   display: flex;
@@ -378,8 +377,9 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: rgba(184, 135, 11, 0.295);
-  background-image: linear-gradient(rgba(184, 135, 11, 0.295), white);
+  /* background-color: rgb(214, 214, 214); */
+  background-image: linear-gradient(rgb(193, 191, 191), white);
+  /* background-image: linear-gradient(rgba(184, 135, 11, 0.295), white); */
   padding-block-start: calc(var(--section-padding) + 50px);
   /* text-align: center; */
   /* overflow: hidden; */
@@ -423,7 +423,7 @@ body {
 
 .hero-title { margin-block: 10px 15px; }
 
-.hero-text { color: var(--rich-black-fogra-29-1); max-width: 787px;}
+.hero-text { color: var(--rich-black-fogra-29-1); max-width: 787px; font-size: var(--fs-8);}
 
 /* .hero .btn-group { margin-block-start: 40px; justify-content: center; align-items: flex-start;} */
 
@@ -566,6 +566,10 @@ body {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
+
+.about {
+  background-image: linear-gradient( white, rgb(193, 191, 191), white);
+}
 
 .about .container {
   display: grid;
@@ -741,8 +745,35 @@ body {
 }
 
 /*-----------------------------------*\
+  #SEGMENTS WORKED
+\*-----------------------------------*/
+
+.segments {
+  background-image: linear-gradient( white, rgb(193, 191, 191));
+}
+
+.segments .hero-btn {
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.btn.btn-primary.equal {
+  display: flex;
+  border-radius: 30px;
+  flex: 1;
+}
+
+
+/*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
+
+.service {
+  background-image: linear-gradient(rgb(193, 191, 191), white);
+}
 
 .service .section-text { margin-block: 15px 50px; }
 
@@ -776,7 +807,7 @@ body {
 
 .service-card:is(:hover, :focus-within) .img { transform: scale(1.1); }
 
-.service-card .card-text { margin-block: 5px 13px; }
+.service-card .card-text { margin-block: 5px 13px; color: black; font-size: var(--fs-9);}
 
 .service .btn { margin-inline: auto; }
 
@@ -787,6 +818,10 @@ body {
 /*-----------------------------------*\
   #FEATURES
 \*-----------------------------------*/
+
+.features {
+  background-image: linear-gradient( white, rgb(193, 191, 191));
+}
 
 .features .section-text { margin-block: 15px 50px; }
 
@@ -817,7 +852,7 @@ body {
   transition: var(--transition-1);
 }
 
-.features-card:hover .card-number { color: var(--go-green); }
+/* .features-card:hover .card-number { color: var(--go-green); } */
 
 .features-card .card-title {
   font-size: var(--fs-6);
@@ -826,7 +861,7 @@ body {
 
 .features-card :is(.card-title, .card-text) { transition: var(--transition-1); }
 
-.features-card:hover :is(.card-title, .card-text) { color: var(--white); }
+/* .features-card:hover :is(.card-title, .card-text) { color: var(--white); } */
 
 
 
@@ -835,6 +870,10 @@ body {
 /*-----------------------------------*\
   #FAQ
 \*-----------------------------------*/
+
+.faq {
+  background-image: linear-gradient(rgb(193, 191, 191), white);
+}
 
 .faq .container {
   /* display: flex; */

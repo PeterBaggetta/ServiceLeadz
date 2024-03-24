@@ -29,7 +29,9 @@
 
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   
 </head>
 
@@ -62,14 +64,13 @@
           <div class="hero-content">
 
             <div class="hero-heading-type">
-              <h1 class="h1 hero-title">Capitalize On</h1>
+              <h1 class="h1 hero-title">Get Warm Intros With</h1>
               <div class="typed-words"></div>
             </div>
 
             <div>
               <p class="hero-text">
-                Tap into a world of opportunity with direct contacts and sourcing <br/>for OEMs with
-                the #1 platform for semiconductors.
+                Tap into a world of Capital Access and Direct Channels to over 10M+ Investors
               </p>
             </div>
 
@@ -78,9 +79,9 @@
             </div>
 
 
-            <div class="hero-banner">
+            <!-- <div class="hero-banner">
               <img src="./assets/images/logo_moving.gif" class="hero-logo">
-            </div>
+            </div> -->
 
           </div>
 
@@ -98,17 +99,24 @@
       -->
 
       <section class="section about" id="about" aria-label="about">
-        <h2 class="h2-sm section-title" style="justify-content: center; display: flex;">About Service Leadz</h2>
         <div class="container">
+          <div>
+            <h2 class="h2-sm section-title" style="justify-content: center; display: flex; padding-bottom: 80px;">About ServiceLeadz</h2>
 
-          <figure class="about-banner">
-            In 2023 ServiceLeadz helped contruction companies, real estate companies, and the consumer service market
-            facilitate partnerships and contracts with our highest facilitation value being $14M. <br /><br />
+            <figure class="about-banner">
+              In 2023 ServiceLeadz helped contruction companies, real estate companies, and the consumer service market
+              facilitate partnerships and contracts with our highest facilitation value being $14M. <br /><br />
+  
+              Now in 2024 we are expanding our footprint into private and public markets, facilitating meetings between
+              businesses and investors internationally. This shift enabled us to harness a system that channeled $100M+
+              globally, showcasing our growing market influence.
+            </figure>
 
-            Now in 2024 we are expanding our footprint into private and public markets, facilitating meetings between
-            businesses and investors internationally. This shift enabled us to harness a system that channeled $100M+
-            globally, showcasing our growing market influence.
-          </figure>
+            <div class="hero-btn p25" style="justify-content: center; padding-top: 50px;">
+              <a href="#" id="popup-link2" class="btn btn-primary">Book Your Call</a>
+            </div>
+          </div>
+          
 
           <div class="about-content">
 
@@ -168,9 +176,7 @@
 
           </div>
 
-          <div class="hero-btn p25">
-            <a href="#" id="popup-link2" class="btn btn-primary">Book Your Call</a>
-          </div>
+          
         </div>
 
       </section>
@@ -198,6 +204,30 @@
             var copy = document.querySelector(".logos-slide").cloneNode(true);
             document.querySelector('.logos').appendChild(copy);
           </script>
+        </div>
+
+      </section>
+
+
+      <!-- 
+        - Segments worked
+       -->
+
+       <section class="section segments" id="segments" aria-label="segments">
+        <h2 class="h2 section-title text-center">Segments We've Served</h2>
+
+        <div class="container" style="margin-top: 60px;">
+          <div class="hero-btn p25">
+            <div class="btn btn-primary equal">Semiconductors</div>
+
+            <div class="btn btn-primary equal">Clean Tech</div>
+
+            <div class="btn btn-primary equal">Therapeutics</div>
+
+            <div class="btn btn-primary equal">Oil</div>
+
+            <div class="btn btn-primary equal">Energy</div>
+          </div>
         </div>
 
       </section>
@@ -613,7 +643,7 @@
                 Accredited Retail, and Angel Investors
               </p>
 
-              <div class="hero-btn p25">
+              <div class="hero-btn p25" style="justify-content: center;">
                 <a href="#" id="popup-link4" class="btn btn-primary">Book Your Call</a>
               </div>
 
@@ -666,11 +696,11 @@
   <!-- TYPED WORDS -->
   <script>
     var typed = new Typed(".typed-words", {
-      strings: ["Effective Strategies", "Advanced Manufacturing", "Mining Sectors", "Meeting OEM Demands", "Cutting-Edge Serice", "Outreach", "Robust Systems"],
-      typeSpeed: 90,
-      backSpeed: 75,
+      strings: ["VCs", "Accredited Institutional Investors", "Angels", "Family Offices", "High Net Worths", "Funds", "Private Equity Partners", "Lenders"],
+      typeSpeed: 60,
+      backSpeed: 60,
       backDelay: 600,
-      startDelay: 400,
+      startDelay: 200,
       loop: true,
       showCursor: false,
       cursorChar: "|",
