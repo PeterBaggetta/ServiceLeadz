@@ -752,18 +752,32 @@ body {
   background-image: linear-gradient( white, rgb(193, 191, 191));
 }
 
-.segments .hero-btn {
-  padding: 0 20px;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  display: flex;
+.segments .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.btn.btn-primary.equal {
-  display: flex;
-  border-radius: 30px;
-  flex: 1;
+.segments-card {
+  background-color: var(--rich-black-fogra-29-1);
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  text-align: center;
+  /* width: 20%; */
+  padding: 10px 20px;
+  margin: 10px 10px;
+}
+
+.segments-card .card-title {
+  color: white;
+  font-size: var(--fs-8);
+  transition: var(--transition-1);
+}
+
+@media screen and (max-width: 992px) {
+  .segments .container {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
 }
 
 
@@ -1378,7 +1392,6 @@ body {
 
 
 
-
   /**
    * SERVICE
    */
@@ -1398,7 +1411,6 @@ body {
   .features .grid-list { grid-template-columns: repeat(3, 1fr); }
 
 
-
   /**
    * FAQ
    */
@@ -1407,10 +1419,6 @@ body {
     grid-template-columns: 0.48fr 1fr;
     align-items: flex-start;
   }
-
-  /*
-   * CTA
-   */
 
 
 
