@@ -932,7 +932,7 @@ body {
 
 .faq-card .card-action:is(:hover, :focus, .active) {
   --action-bg: var(--go-green);
-  --color: var(--white);
+  --color: black;
 }
 
 .faq-card .card-title {
