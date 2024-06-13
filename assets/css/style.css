@@ -755,7 +755,7 @@ body {
 
 .segments .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .segments-card {
@@ -787,7 +787,7 @@ body {
 \*-----------------------------------*/
 
 .service {
-  background-image: linear-gradient(rgb(193, 191, 191), white);
+  background-image: linear-gradient(white,rgb(193, 191, 191));
 }
 
 .service .section-text { margin-block: 15px 50px; }
@@ -835,7 +835,7 @@ body {
 \*-----------------------------------*/
 
 .features {
-  background-image: linear-gradient( white, rgb(193, 191, 191));
+  background-image: linear-gradient(rgb(193, 191, 191), white);
 }
 
 .features .section-text { margin-block: 15px 50px; }
@@ -887,7 +887,7 @@ body {
 \*-----------------------------------*/
 
 .faq {
-  background-image: linear-gradient(rgb(193, 191, 191), white);
+  background-image: linear-gradient(white, rgb(193, 191, 191), );
 }
 
 .faq .container {
