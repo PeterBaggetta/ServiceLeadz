@@ -18,6 +18,56 @@ const addEventOnElem = function (elem, type, callback) {
 
 
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("form-modal");
+  const closeButton = document.querySelector(".close-button");
+
+  // Function to show the modal
+  function showModal() {
+      modal.style.display = "block";
+      document.body.style.overflow = "hidden"; // Disable scrolling
+  }
+
+  // Function to hide the modal
+  function hideModal() {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // Enable scrolling
+  }
+
+  // Show the modal when the page loads
+  showModal();
+
+  // Close the modal when the close button is clicked
+  closeButton.addEventListener("click", hideModal);
+
+  // Close the modal when clicking outside of the modal content
+  window.addEventListener("click", function(event) {
+      if (event.target === modal) {
+          hideModal();
+      }
+  });
+});
+
+function toggleForm() {
+  var form = document.getElementById("form-modal");
+  if (form.style.display == "none") {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+
+
+
 /**
  * navbar toggle
  */

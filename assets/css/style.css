@@ -740,8 +740,8 @@ body {
 
 .logos-slide img{
   display: inline;
-  height: 150px;
-  max-width: 500px;
+  max-height: 150px;
+  max-width: 400px;
   margin: 0 40px;
 }
 
@@ -1161,6 +1161,132 @@ body {
 .footer-bottom-link:is(:hover, :focus) { color: var(--go-green); }
 
 
+
+/*-----------------------------------*\
+  #POPUP FORM 
+\*-----------------------------------*/
+
+.modal {
+  display: none; /* Show modal by default for testing, set to 'none' to hide by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent scroll within modal */
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 3% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent scroll within modal content */
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(46, 45, 45);
+}
+
+.form-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(56, 56, 56);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(82, 81, 81);
+}
+
+.form-group label span.required {
+  color: red;
+  margin-left: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  white-space: nowrap; /* Prevent line break */
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none; /* Hide by default, can be shown when needed */
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-group button:hover {
+  background-color: #e64a19;
+}
 
 
 

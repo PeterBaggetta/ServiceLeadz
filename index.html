@@ -41,6 +41,79 @@
 
 <body>
 
+
+  <!-- 
+    - #POPUP FORM
+   -->
+
+  <div id="form-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="form-container">
+        <h2>SIGN UP BELOW TO RECEIVE OUR INVESTMENT OFFERINGS</h2>
+        <p> Want to invest along side us in emerging market assets in the hottest markets across the globe? </p>
+        
+        
+        <!-- Embed Google Form -->
+        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd278fUIds0nL9bnvmk4upJ0gsecuurcGNCJp5D7HcSA3Za2Q/viewform?embedded=true" class="google-form-iframe" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
+        <form action="https://formspree.io/f/xayrrdrb" method="post">
+          <div class="form-group">
+            <label for="first-name">First Name <span class="required">*</span></label>
+            <input type="text" id="first-name" name="first-name" required placeholder="First Name">
+            <div class="error">Please complete this required field.</div>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name <span class="required">*</span></label>
+            <input type="text" id="last-name" name="last-name" required placeholder="Last Name">
+            <div class="error">Please complete this required field.</div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="_replyto" required placeholder="Email Address">
+            <div class="error">Please complete this required field.</div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+            <div class="error">Please complete this required field.</div>
+          </div>
+          <div class="form-group">
+            <label>Accredited Investor? <span class="required">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="accreditation" value="accredited" required> ACCREDITED</label>
+              <label><input type="radio" name="accreditation" value="non-accredited"> NON - ACCREDITED</label>
+              <label><input type="radio" name="accreditation" value="not-sure"> Not Sure</label>
+            </div>
+            <div class="error">Please complete this required field.</div>
+          </div>
+          <div class="form-group">
+            <button type="submit">Sign Up</button>
+          </div>
+        </form>
+
+        <script>
+          window.onbeforeunload = () => {
+              for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+              }
+            }
+        </script>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
   <!-- 
     - #HEADER
   -->
@@ -133,8 +206,8 @@
 
               <div class="number">
                 <div class="number-wrap">
-                  <div class="counter number-head" data-target="1600000"></div>
-                  <div class="number-head">+</div>
+                  <div class="counter number-head" data-target="1200"></div>
+                  <!-- <div class="number-head">+</div> -->
                 </div>
                 <div class="number-paragraph">Institutional Investors</div>
               </div>
@@ -142,8 +215,8 @@
               <div id="w-node-1" class="number">
                 <div class="number-wrap">
                   <div class="number-head">$</div>
-                  <div class="counter number-head" data-target="145000000"></div>
-                  <div class="number-head">+</div>
+                  <div class="counter number-head" data-target="45000000"></div>
+                  <!-- <div class="number-head">+</div> -->
                 </div>
                 <div class="number-paragraph">In Deals</div>
               </div>
@@ -151,8 +224,8 @@
               <div id="w-node-2" class="number">
                 <div class="number-wrap">
                   <div class="number-head">$</div>
-                  <div class="counter number-head" data-target="45000000"></div>
-                  <div class="number-head">+</div>
+                  <div class="counter number-head" data-target="75000000"></div>
+                  <!-- <div class="number-head">+</div> -->
                 </div>
                 <div class="number-paragraph">In Investment/Dealflow Introductions</div>
               </div>
@@ -168,7 +241,7 @@
               <div class="number">
                 <div class="number-wrap">
                   <div class="counter number-head" data-target="7"></div>
-                  <div class="number-head">+</div>
+                  <!-- <div class="number-head">+</div> -->
                 </div>
                 <div class="number-paragraph">Employees</div>
               </div>
@@ -193,17 +266,18 @@
         <div class="logos">
           <div class="logos-slide">
             <img src="assets/images/Morgan-Stanley-Logo.png" />
-            <img src="assets/images/Synergenmet-logo.png" />
-            <img src="assets/images/Libra-Lithium-logo.png" />
-            <img src="assets/images/american-lithium-energy-logo.png" />
-            <img src="assets/images/Gratomic_logo.png" />
-            <img src="assets/images/Solid-State-AI.png" />
+            <img src="assets/images/blacktyde_capital.png" />
+            <img src="assets/images/natixis.png" />
+            <img src="assets/images/canaccord.png" />
             <img src="assets/images/Tarku_resources-logo.png" />
             <img src="assets/images/td-canada-trust-logo.png" />
             <img src="assets/images/Barclays-Logo.png" />
             <img src="assets/images/Kingfish-Group-logo.png" />
             <img src="assets/images/brookfield-logo.png" />
-            <img src="assets/images/magna-logo.png" />
+            <img src="assets/images/resource_capitalFunds.png" />
+            <img src="assets/images/S_partners.png" />
+            <img src="assets/images/stephens_investment.png" />
+            <img src="assets/images/6th_street.png" />
           </div>
 
           <script>
@@ -658,6 +732,8 @@
 
               <div class="hero-btn p25" style="justify-content: center;">
                 <a href="#" id="popup-link4" class="btn btn-primary">Book Your Call</a>
+
+                <a href="#" onclick="toggleForm()" class="btn btn-primary">Become an Investor</a>
               </div>
 
             </div>
@@ -785,6 +861,22 @@
     });
 
   </script>
+
+  <!-- Open & Close Popup Form -->
+  <!-- <script>
+    window.addEventListener("load", function() {
+      setTimeout(
+        function open(e) {
+          document.querySelector(".popup").style.display = "block";
+        },
+        1000
+      )
+    })
+
+    document.querySelector("#close").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+      })
+  </script> -->
 
 
 </body>
